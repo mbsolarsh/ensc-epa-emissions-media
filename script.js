@@ -7,14 +7,14 @@ const LENS = {
     headline: "Trump's EPA will stop regulating greenhouse gases, setting up a legal fight",
     sub: "Heard on All Things Considered · By Jeff Brady & Camila Domonoske",
     lead: "“On Thursday, the Trump administration rescinded the central scientific finding that underpins much of the nation's climate pollution rules, its most aggressive action yet to halt initiatives that address planetary warming.”",
-    notes: ["Frame: climate rollback + court fight", "Key phrase: “most aggressive action yet”", "Subject: “the Trump administration”", "Second quote: an environmental lawyer"]
+    notes: ["Vibe: climate setback + court fight", "Big phrase: “most aggressive action yet”", "Who's doing it: “the Trump administration”", "2nd quote: an environmental lawyer"]
   },
   fox: {
     outlet: "Fox News · Politics · Feb 12, 2026",
     headline: "Obama-era greenhouse gas rules gone as EPA's Zeldin signs 'single largest deregulatory action' in history",
     sub: "EPA administrator eliminates regulation that forced annoying start-stop car feature on drivers nationwide",
     lead: "“FIRST ON FOX: Environmental Protection Agency (EPA) Administrator Lee Zeldin on Thursday will eliminate the \"2009 Obama EPA Endangerment Finding,\" which set in motion most federal greenhouse gas emissions standards for vehicles, saving Americans billions.”",
-    notes: ["Frame: deregulation win + consumer relief", "Key phrase: “saving Americans billions”", "Label: “Obama-era”", "First quote: the EPA administrator"]
+    notes: ["Vibe: big win for drivers", "Big phrase: “saving Americans billions”", "Label: “Obama-era”", "1st quote: the EPA administrator"]
   }
 };
 const screen = document.getElementById("lensScreen");
@@ -40,51 +40,51 @@ showLens("npr");
 const FRAMES = [
   {
     tab: "A · Headline & lead",
-    npr: ["Headline names <b>“Trump's EPA”</b> as the actor and looks ahead to a <b>“legal fight.”</b>",
-          "The lead calls it the <b>“most aggressive action yet”</b> against efforts to address <b>“planetary warming.”</b>",
-          "The second quote is from an environmental lawyer who promises to sue.",
-          "<b>Photo:</b> a quiet, empty shot of EPA headquarters with flags at half-staff, with no people celebrating."],
-    fox: ["Headline says the rules are <b>“gone”</b> and labels them <b>“Obama-era.”</b>",
-          "The subheadline focuses on the <b>“annoying start-stop car feature.”</b>",
-          "Opens as an exclusive (“FIRST ON FOX”) and says the change is <b>“saving Americans billions.”</b>",
-          "<b>Photo:</b> a smiling signing ceremony with officials and coal workers in hard hats."],
-    verdict: "Both headlines report the same event. NPR leads with conflict and climate. Fox leads with savings and convenience for drivers. Even the photos match: NPR's is somber, Fox's is a celebration."
+    npr: ["The headline puts <b>“Trump's EPA”</b> front and center and is already looking ahead to a <b>“legal fight.”</b>",
+          "The first sentence calls it the <b>“most aggressive action yet”</b> against fighting <b>“planetary warming.”</b>",
+          "The second person quoted is an environmental lawyer saying they'll sue.",
+          "<b>Photo:</b> a pretty gloomy shot of EPA headquarters with the flags at half-staff and nobody in it."],
+    fox: ["The headline says the rules are <b>“gone”</b> and calls them <b>“Obama-era,”</b> which makes it feel political right away.",
+          "The subheadline is all about the <b>“annoying start-stop car feature.”</b>",
+          "It starts with “FIRST ON FOX” like a scoop, and says the change is <b>“saving Americans billions.”</b>",
+          "<b>Photo:</b> a happy signing ceremony with smiling officials and coal workers in hard hats."],
+    verdict: "Same event, but NPR starts with conflict and climate while Fox starts with saving money and making drivers' lives easier. Even the photos match the mood: NPR's feels serious, Fox's feels like a party."
   },
   {
     tab: "B · Facts vs. opinion",
     npr: ["<b>Facts:</b> the 2009 finding; <i>Massachusetts v. EPA</i> (2007); transportation is the largest source of direct U.S. greenhouse gas emissions; EVs were about 10% of new car sales in 2024.",
           "<b>Facts:</b> dozens of independent scientists rebutted the Energy Department report the EPA relied on.",
-          "<b>Speculative:</b> “almost certain to lead to years of court battles.” Mentions “economic analyses” showing drivers save money, but doesn't name them."],
+          "<b>Guessing:</b> it says this is “almost certain to lead to years of court battles.” It also mentions “economic analyses” that show drivers save money, but never says which ones."],
     fox: ["<b>Facts:</b> the 2009 finding covered six gases; <i>Massachusetts v. EPA</i>; EPA created the start-stop credit in 2012.",
-          "<b>Unsupported:</b> “$1.3 trillion” and “billions” in savings are reported with no explanation of how they were calculated.",
-          "<b>Opinion stated as fact:</b> start-stop is a “loophole” with no “empirical” benefit, with no data given. Also relies on an unnamed “source familiar.”"],
-    verdict: "NPR gives more checkable facts and sources. Fox makes bigger claims about cost but gives less evidence for them."
+          "<b>No proof given:</b> it says “$1.3 trillion” and “billions” in savings, but never explains where those numbers came from.",
+          "<b>Opinion written like a fact:</b> it calls start-stop a “loophole” with no real benefit, but doesn't show any data. It also uses an unnamed “source familiar with the situation.”"],
+    verdict: "NPR gave more facts I could actually go check. Fox made bigger claims about money but didn't back them up as much."
   },
   {
     tab: "C · Tone & language",
-    npr: ["The reporters' own wording is mostly neutral, but they pick dramatic quotes: “slap in the face,” “polluter protection agency.”",
-          "Also quotes Zeldin's “dagger straight into the heart of the climate change religion” and Trump calling climate change a “con job.” These are used to show how extreme the administration's side is.",
-          "Describes trucks as “gas-guzzling.”"],
-    fox: ["The reporter's own wording is loaded: “annoying,” “infuriated motorists,” “loophole,” “slew of new restrictions.”",
-          "Quotes “stupid feature,” “Trump Speed,” “crushing regulations,” and “climate participation trophy” without pushing back.",
-          "Critics' quotes (Earthjustice, Gov. Polis) are included but placed at the end."],
-    verdict: "Fox's charged words often come from the reporter. NPR's mostly come from the people it chose to quote."
+    npr: ["The reporters mostly keep their own words neutral, but they pick dramatic quotes like “slap in the face” and “polluter protection agency.”",
+          "They also include Zeldin saying “dagger straight into the heart of the climate change religion” and Trump calling climate change a “con job,” which kind of makes the other side look extreme.",
+          "They call big trucks “gas-guzzling.”"],
+    fox: ["The reporter uses loaded words on their own, like “annoying,” “infuriated motorists,” “loophole,” and “slew of new restrictions.”",
+          "It runs quotes like “stupid feature,” “Trump Speed,” “crushing regulations,” and “climate participation trophy” without questioning any of them.",
+          "The critics (Earthjustice and Gov. Polis) do get quoted, but only at the very end."],
+    verdict: "Something I didn't expect: in Fox, a lot of the emotional words come from the reporter. In NPR, they mostly come from the people being quoted."
   },
   {
     tab: "D · Selection & omission",
-    npr: ["<b>Emphasizes:</b> climate disasters, record heat, the history of the law, EV policy, the auto industry's mixed reaction, and doubts about the science the EPA used.",
-          "<b>Leaves out:</b> start-stop technology and drivers' everyday complaints. Says little about public health."],
-    fox: ["<b>Emphasizes:</b> the start-stop feature, consumer choice, cost savings, and manufacturing jobs.",
-          "<b>Leaves out:</b> climate science, record temperatures, the rebuttal from scientists, auto suppliers who wanted the rules kept, and any check of the $1.3 trillion claim."],
-    verdict: "Each article picks the facts that support its story. The cards in the next section show the details."
+    npr: ["<b>Focuses on:</b> climate disasters, record heat, the history of the law, EVs, how the car industry feels about it, and problems with the science the EPA used.",
+          "<b>Skips:</b> start-stop engines and what everyday drivers actually complain about. It barely talks about health."],
+    fox: ["<b>Focuses on:</b> start-stop engines, consumer choice, saving money, and manufacturing jobs.",
+          "<b>Skips:</b> climate science, record temperatures, the scientists who pushed back, car part makers who wanted the rules kept, and any fact-check of the $1.3 trillion number."],
+    verdict: "Each article picks the facts that fit its story. The flip cards further down go into more detail."
   },
   {
     tab: "E · Framing",
-    npr: ["Frames the repeal as a <b>crisis and a controversy</b>: a major step backward on climate that will be fought in court for years.",
-          "Readers come away thinking about climate risk and legal uncertainty."],
-    fox: ["Frames the repeal as an <b>opportunity and a victory</b>: the biggest deregulation in history, ending an annoying, costly rule.",
-          "Readers come away thinking about their wallet and their car battery."],
-    verdict: "Same policy, two opposite frames: “threat to the planet” vs. “win for drivers.”"
+    npr: ["Makes it feel like a <b>crisis and a controversy</b>, a big step backward on climate that's going to be fought in court for years.",
+          "After reading it, I was mostly thinking about climate risk and what the courts will do."],
+    fox: ["Makes it feel like an <b>opportunity and a win</b>, the biggest deregulation ever and the end of an annoying, expensive rule.",
+          "After reading it, I was mostly thinking about my wallet and my car battery."],
+    verdict: "Same policy, two totally opposite stories: “threat to the planet” vs. “win for drivers.”"
   }
 ];
 const tabsEl = document.getElementById("frameTabs");
@@ -94,7 +94,7 @@ function showFrame(i) {
   panelEl.innerHTML = `
     <div class="fl"><h4>NPR</h4><ul>${f.npr.map(x => `<li>${x}</li>`).join("")}</ul></div>
     <div class="fr"><h4>Fox News</h4><ul>${f.fox.map(x => `<li>${x}</li>`).join("")}</ul></div>
-    <div class="verdict">🔎 <b>Takeaway:</b> ${f.verdict}</div>`;
+    <div class="verdict">🔎 <b>What I noticed:</b> ${f.verdict}</div>`;
   [...tabsEl.children].forEach((t, j) => { t.classList.toggle("active", i === j); t.setAttribute("aria-selected", i === j); });
 }
 FRAMES.forEach((f, i) => {
@@ -157,13 +157,13 @@ fillWords("wordsR", WORDS_R);
 
 /* ---------- What's missing flip cards ---------- */
 const FLIPS = [
-  ["Climate science", "r", "Fox never explains what greenhouse gases do and doesn't mention that the last three years were the hottest on record. NPR covers both."],
-  ["The $1.3 trillion claim", "l", "NPR points out the savings come mostly from cheaper sticker prices, while studies show drivers save overall on gas under strict rules. Fox reports the number without questioning it."],
-  ["Start-stop engines", "r", "Fox's subheadline and several paragraphs focus on this feature. NPR never mentions it."],
-  ["Scientists push back", "l", "NPR reports that dozens of independent scientists said the Energy Department's climate report was “full of errors.” Fox leaves this out."],
-  ["Auto industry split", "l", "NPR notes that parts suppliers (MEMA) asked the EPA to keep the rules so they can compete with Chinese EVs. Fox presents industry as uniformly helped."],
-  ["Public health", "r", "Surprise: the clearest health argument (kids, seniors, people with health conditions) is Gov. Polis's quote in Fox. NPR mentions health only briefly."],
-  ["Smog vs. greenhouse gases", "b", "Neither article explains that this repeal covers only CO₂ and other greenhouse gases. Separate rules for smog-forming tailpipe pollution still exist."]
+  ["Climate science", "r", "Fox never explains what greenhouse gases actually do, and doesn't mention that the last three years were the hottest ever recorded. NPR talks about both."],
+  ["The $1.3 trillion claim", "l", "NPR points out that most of the “savings” come from cheaper sticker prices, and that drivers actually save more on gas under the stricter rules. Fox just reports the number."],
+  ["Start-stop engines", "r", "Fox spends its subheadline and a bunch of paragraphs on this. NPR doesn't mention it once."],
+  ["Scientists push back", "l", "NPR says dozens of independent scientists called the Energy Department's climate report “full of errors.” Fox leaves that out completely."],
+  ["Auto industry split", "l", "NPR mentions that car part makers (MEMA) actually asked the EPA to keep the rules so they could compete with Chinese EVs. Fox makes it sound like the whole industry is happy."],
+  ["Public health", "r", "This surprised me: the best health argument (about kids, seniors, and people with health conditions) is a quote from Gov. Polis in the Fox article. NPR barely mentions health."],
+  ["Smog vs. greenhouse gases", "b", "Neither article explains that this only affects CO₂ and other greenhouse gases. The rules for smog-causing pollution from tailpipes are separate and still exist."]
 ];
 const flipGrid = document.getElementById("flipGrid");
 const who = { l: "Covered by NPR, missing from Fox", r: "Covered by Fox, missing from NPR", b: "Missing from both" };
@@ -178,14 +178,14 @@ flipGrid.querySelectorAll(".flip").forEach(c => c.addEventListener("click", () =
 
 /* ---------- Who said it? quiz ---------- */
 const QUIZ = [
-  ["“a slap in the face to the millions of Americans who are living through climate disasters and their aftermath”", "npr", "NPR quoted Earthjustice's president. Fox quoted her too, but chose a different line."],
-  ["“it kills the battery of your car without any significant benefit to the environment”", "fox", "EPA Administrator Lee Zeldin on start-stop engines. NPR never mentions start-stop."],
-  ["“We are driving a dagger straight into the heart of the climate change religion”", "npr", "Surprise! NPR ran this Zeldin quote, probably to show how combative the administration's message is."],
-  ["“Protecting people's health and making our air cleaner should never be a partisan issue”", "fox", "Surprise! Fox quoted Colorado's Democratic governor, Jared Polis. It was the strongest health argument in either article."],
-  ["“its most aggressive action yet to halt initiatives that address planetary warming”", "npr", "This is NPR's opening sentence, written by the reporters themselves."],
-  ["“quickly infuriated motorists who hear their engine click off then on again at a stoplight”", "fox", "This is the Fox reporter's own wording, not a quote, and the article gives no survey data for it."],
-  ["“Transportation is the largest source of direct greenhouse gas emissions in the United States.”", "npr", "A checkable fact that matches EPA data (about 28% in 2022). Fox doesn't include it."],
-  ["“it will save the American people $1.3 trillion in crushing regulations”", "fox", "White House Press Secretary Karoline Leavitt. Both outlets reported the number, but only NPR questioned it."]
+  ["“a slap in the face to the millions of Americans who are living through climate disasters and their aftermath”", "npr", "NPR quoted the president of Earthjustice. Fox quoted her too, just a different line."],
+  ["“it kills the battery of your car without any significant benefit to the environment”", "fox", "That's EPA Administrator Lee Zeldin talking about start-stop engines. NPR never brings them up."],
+  ["“We are driving a dagger straight into the heart of the climate change religion”", "npr", "Gotcha! NPR used this Zeldin quote, probably to show how aggressive the administration sounds."],
+  ["“Protecting people's health and making our air cleaner should never be a partisan issue”", "fox", "Gotcha! Fox quoted Colorado's Democratic governor, Jared Polis, and it ended up being the best health argument in either article."],
+  ["“its most aggressive action yet to halt initiatives that address planetary warming”", "npr", "That's NPR's first sentence, written by the reporters themselves."],
+  ["“quickly infuriated motorists who hear their engine click off then on again at a stoplight”", "fox", "That's the Fox reporter's own wording, not a quote, and there's no data showing drivers actually feel that way."],
+  ["“Transportation is the largest source of direct greenhouse gas emissions in the United States.”", "npr", "This is a real fact you can check, and it matches EPA data (about 28% in 2022). Fox doesn't include it."],
+  ["“it will save the American people $1.3 trillion in crushing regulations”", "fox", "That's White House Press Secretary Karoline Leavitt. Both articles used this number, but only NPR questioned it."]
 ];
 let qi = 0, score = 0;
 const qText = document.getElementById("qText"), qFb = document.getElementById("qFb"), qNext = document.getElementById("qNext");
