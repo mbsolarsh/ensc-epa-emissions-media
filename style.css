@@ -151,7 +151,7 @@ cite { display: block; font-style: normal; font-size: 14px; margin-top: 10px; co
 
 /* meter */
 .meter { background: var(--paper); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
-.m-row { display: grid; grid-template-columns: minmax(200px, 38%) 1fr; gap: 16px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.m-row { display: grid; grid-template-columns: minmax(200px, 32%) 1fr; gap: 16px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .m-row:last-of-type { border-bottom: 0; }
 .m-label { font-family: var(--head); font-weight: 700; font-size: 16px; }
 .m-desc { display: block; font-family: var(--body); font-weight: 400; font-size: 14px; line-height: 1.45; color: var(--muted); margin-top: 4px; }

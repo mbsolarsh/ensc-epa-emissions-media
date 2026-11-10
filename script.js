@@ -107,13 +107,13 @@ showFrame(0);
 
 /* ---------- Emphasis meter (approx. % of paragraphs) ---------- */
 const THEMES = [
-  ["Climate science & disasters", 20, 3, "How greenhouse gases heat up the planet, plus things like record heat, floods, and wildfires."],
-  ["Law & political history", 30, 15, "The Clean Air Act, the 2007 Supreme Court case, the 2009 endangerment finding, and how different presidents have handled it."],
-  ["Cars, EVs & auto industry", 30, 10, "What the change means for car companies, electric vehicles (EVs), and the kinds of cars that get made and sold."],
-  ["Start-stop feature", 0, 30, "A feature in a lot of newer gas cars where the engine shuts off by itself when you stop, like at a red light, and turns back on when you let off the brake. It saves gas and cuts idling emissions, but a lot of drivers find it annoying. The EPA gave car companies credits for using it starting in 2012."],
-  ["Cost & savings claims", 12, 15, "Arguments about money, like the White House saying the repeal saves $1.3 trillion, or whether drivers save more on gas with cleaner cars."],
-  ["Public health", 3, 7, "How car pollution affects people's health, especially kids, older people, and people with asthma or other conditions."],
-  ["Critics & opposition", 5, 20, "People who are against the repeal, like the environmental law group Earthjustice and Colorado's governor, Jared Polis."]
+  ["Climate science & disasters", 20, 3, "Warming, heat, wildfires, floods"],
+  ["Law & political history", 30, 15, "Courts, laws, past presidents"],
+  ["Cars, EVs & auto industry", 30, 10, "Carmakers and electric cars"],
+  ["Start-stop feature", 0, 30, "Engine auto-shuts off at stops"],
+  ["Cost & savings claims", 12, 15, "Who saves money, how much"],
+  ["Public health", 3, 7, "Pollution's effect on people"],
+  ["Critics & opposition", 5, 20, "People against the repeal"]
 ];
 const meter = document.getElementById("meter");
 meter.innerHTML = THEMES.map(([label, n, f, desc]) => `
