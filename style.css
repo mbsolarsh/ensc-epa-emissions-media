@@ -91,6 +91,9 @@ dt { font-family: var(--head); font-weight: 600; color: var(--muted); }
 dd { margin: 0; }
 .link { display: inline-block; margin-top: 10px; font-family: var(--head); font-weight: 700; }
 .left .link { color: var(--left); } .right .link { color: var(--right); }
+.art-photo { margin: -24px -24px 18px; }
+.art-photo img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.art-photo figcaption { font-size: 13px; color: var(--muted); padding: 6px 24px 0; }
 .receipt { margin: 18px 0 0; border: 2px dashed var(--line); border-radius: 12px; overflow: hidden; }
 .receipt img { display: block; width: 100%; }
 .receipt figcaption { font-size: 13px; color: var(--muted); padding: 6px 10px; }
