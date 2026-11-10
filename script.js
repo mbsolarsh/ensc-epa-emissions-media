@@ -42,11 +42,13 @@ const FRAMES = [
     tab: "A · Headline & lead",
     npr: ["Headline names <b>“Trump's EPA”</b> as the actor and looks ahead to a <b>“legal fight.”</b>",
           "The lead calls it the <b>“most aggressive action yet”</b> against efforts to address <b>“planetary warming.”</b>",
-          "The second quote is from an environmental lawyer who promises to sue."],
+          "The second quote is from an environmental lawyer who promises to sue.",
+          "<b>Photo:</b> a quiet, empty shot of EPA headquarters with flags at half-staff, with no people celebrating."],
     fox: ["Headline says the rules are <b>“gone”</b> and labels them <b>“Obama-era.”</b>",
           "The subheadline focuses on the <b>“annoying start-stop car feature.”</b>",
-          "Opens as an exclusive (“FIRST ON FOX”) and says the change is <b>“saving Americans billions.”</b>"],
-    verdict: "Both headlines report the same event. NPR leads with conflict and climate. Fox leads with savings and convenience for drivers."
+          "Opens as an exclusive (“FIRST ON FOX”) and says the change is <b>“saving Americans billions.”</b>",
+          "<b>Photo:</b> a smiling signing ceremony with officials and coal workers in hard hats."],
+    verdict: "Both headlines report the same event. NPR leads with conflict and climate. Fox leads with savings and convenience for drivers. Even the photos match: NPR's is somber, Fox's is a celebration."
   },
   {
     tab: "B · Facts vs. opinion",
