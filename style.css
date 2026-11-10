@@ -224,10 +224,13 @@ cite { display: block; font-style: normal; font-size: 14px; margin-top: 10px; co
 .action-box { background: var(--paper); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
 .action-box h3 { margin: 0 0 10px; }
 .checklist { list-style: none; padding: 0; margin: 0; }
-.checklist li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 17px; }
-.checklist label { display: flex; gap: 10px; cursor: pointer; align-items: flex-start; }
-.checklist input { width: 20px; height: 20px; margin-top: 4px; accent-color: var(--green); flex: none; }
-.checklist input:checked + * , .checklist label:has(input:checked) { color: var(--green); }
+.checklist li { padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.45; }
+.checklist li:last-child { border-bottom: 0; }
+.checklist label { display: grid; grid-template-columns: 22px 1fr; column-gap: 12px; align-items: start; cursor: pointer; }
+.checklist input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--green); }
+.checklist label span { min-width: 0; overflow-wrap: break-word; }
+.checklist a { color: var(--left); font-weight: 600; }
+.checklist label:has(input:checked) span { color: var(--green); text-decoration: line-through; text-decoration-thickness: 1px; }
 .pledge { text-align: center; font-family: var(--head); font-size: 22px; font-weight: 700; margin-top: 24px; }
 
 /* note */
