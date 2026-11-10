@@ -162,10 +162,11 @@ cite { display: block; font-style: normal; font-size: 14px; margin-top: 10px; co
 
 /* flip cards */
 .flip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
-.flip { perspective: 1000px; height: 220px; cursor: pointer; border: 0; background: none; padding: 0; text-align: left; font: inherit; color: inherit; }
-.flip-inner { position: relative; width: 100%; height: 100%; transition: transform .6s; transform-style: preserve-3d; }
+.flip { perspective: 1000px; cursor: pointer; border: 0; background: none; padding: 0; text-align: left; font: inherit; color: inherit; display: block; width: 100%; }
+/* Both faces share one grid cell, so the card grows to fit the longer side's text */
+.flip-inner { display: grid; min-height: 220px; height: 100%; transition: transform .6s; transform-style: preserve-3d; }
 .flip.on .flip-inner { transform: rotateY(180deg); }
-.face { position: absolute; inset: 0; backface-visibility: hidden; border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); display: flex; flex-direction: column; justify-content: center; }
+.face { grid-area: 1 / 1; -webkit-backface-visibility: hidden; backface-visibility: hidden; border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); display: flex; flex-direction: column; justify-content: center; overflow-wrap: anywhere; line-height: 1.45; }
 .front { background: var(--paper); border: 2px solid var(--line); }
 .front h4 { font-family: var(--head); font-size: 20px; margin: 0 0 6px; }
 .front small { color: var(--muted); font-family: var(--head); }
