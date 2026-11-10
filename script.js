@@ -43,7 +43,8 @@ const FRAMES = [
     npr: ["The headline puts <b>“Trump's EPA”</b> front and center and is already looking ahead to a <b>“legal fight.”</b>",
           "The first sentence calls it the <b>“most aggressive action yet”</b> against fighting <b>“planetary warming.”</b>",
           "The second person quoted is an environmental lawyer saying they'll sue.",
-          "<b>Photo:</b> a pretty gloomy shot of EPA headquarters with the flags at half-staff and nobody in it."],
+          "<b>Photo:</b> a pretty gloomy shot of EPA headquarters with the flags at half-staff and nobody in it.",
+          "Early on, it connects the repeal to record heat, deadly floods, and the LA wildfires, even though nobody is saying the repeal caused those. That's a framing choice too."],
     fox: ["The headline says the rules are <b>“gone”</b> and calls them <b>“Obama-era,”</b> which makes it feel political right away.",
           "The subheadline is all about the <b>“annoying start-stop car feature.”</b>",
           "It starts with “FIRST ON FOX” like a scoop, and says the change is <b>“saving Americans billions.”</b>",
@@ -58,22 +59,24 @@ const FRAMES = [
     fox: ["<b>Facts:</b> the 2009 finding covered six gases; <i>Massachusetts v. EPA</i>; EPA created the start-stop credit in 2012.",
           "<b>No proof given:</b> it says “$1.3 trillion” and “billions” in savings, but never explains where those numbers came from.",
           "<b>Opinion written like a fact:</b> it calls start-stop a “loophole” with no real benefit, but doesn't show any data. It also uses an unnamed “source familiar with the situation.”"],
-    verdict: "NPR gave more facts I could actually go check. Fox made bigger claims about money but didn't back them up as much."
+    verdict: "NPR gave more facts I could actually go check, and Fox made bigger claims about money without backing them up as much. But NPR isn't perfect either. It pushes back on the $1.3 trillion number using studies it never names, which is the same kind of thing I called out Fox for."
   },
   {
     tab: "C · Tone & language",
     npr: ["The reporters mostly keep their own words neutral, but they pick dramatic quotes like “slap in the face” and “polluter protection agency.”",
           "They also include Zeldin saying “dagger straight into the heart of the climate change religion” and Trump calling climate change a “con job,” which kind of makes the other side look extreme.",
-          "They call big trucks “gas-guzzling.”"],
+          "They call big trucks “gas-guzzling.”",
+          "They also link the repeal to Project 2025, a conservative plan, which adds a political angle of their own."],
     fox: ["The reporter uses loaded words on their own, like “annoying,” “infuriated motorists,” “loophole,” and “slew of new restrictions.”",
           "It runs quotes like “stupid feature,” “Trump Speed,” “crushing regulations,” and “climate participation trophy” without questioning any of them.",
           "The critics (Earthjustice and Gov. Polis) do get quoted, but only at the very end."],
-    verdict: "Something I didn't expect: in Fox, a lot of the emotional words come from the reporter. In NPR, they mostly come from the people being quoted."
+    verdict: "Something I didn't expect: in Fox, a lot of the emotional words come from the reporter. In NPR, they mostly come from the people being quoted. But choosing which quotes to use is still a choice, so both articles end up with a slant."
   },
   {
     tab: "D · Selection & omission",
     npr: ["<b>Focuses on:</b> climate disasters, record heat, the history of the law, EVs, how the car industry feels about it, and problems with the science the EPA used.",
-          "<b>Skips:</b> start-stop engines and what everyday drivers actually complain about. It barely talks about health."],
+          "<b>Skips:</b> start-stop engines and what everyday drivers actually complain about. It barely talks about health.",
+          "<b>One-sided quotes:</b> it quotes several critics, but the only person it directly quotes defending the repeal is Zeldin."],
     fox: ["<b>Focuses on:</b> start-stop engines, consumer choice, saving money, and manufacturing jobs.",
           "<b>Skips:</b> climate science, record temperatures, the scientists who pushed back, car part makers who wanted the rules kept, and any fact-check of the $1.3 trillion number."],
     verdict: "Each article picks the facts that fit its story. The flip cards further down go into more detail."
@@ -84,7 +87,7 @@ const FRAMES = [
           "After reading it, I was mostly thinking about climate risk and what the courts will do."],
     fox: ["Makes it feel like an <b>opportunity and a win</b>, the biggest deregulation ever and the end of an annoying, expensive rule.",
           "After reading it, I was mostly thinking about my wallet and my car battery."],
-    verdict: "Same policy, two totally opposite stories: “threat to the planet” vs. “win for drivers.”"
+    verdict: "Same policy, two totally opposite stories: “threat to the planet” vs. “win for drivers.” Neither one is fully neutral. They just lean in different directions, which is why reading both helped me so much."
   }
 ];
 const tabsEl = document.getElementById("frameTabs");
@@ -158,7 +161,7 @@ fillWords("wordsR", WORDS_R);
 /* ---------- What's missing flip cards ---------- */
 const FLIPS = [
   ["Climate science", "r", "Fox never explains what greenhouse gases actually do, and doesn't mention that the last three years were the hottest ever recorded. NPR talks about both."],
-  ["The $1.3 trillion claim", "l", "NPR points out that most of the “savings” come from cheaper sticker prices, and that drivers actually save more on gas under the stricter rules. Fox just reports the number."],
+  ["The $1.3 trillion claim", "l", "NPR points out that most of the “savings” come from cheaper sticker prices, and that studies found drivers save money overall under the stricter rules because they buy less gas. Fox just reports the number."],
   ["Start-stop engines", "r", "Fox spends its subheadline and a bunch of paragraphs on this. NPR doesn't mention it once."],
   ["Scientists push back", "l", "NPR says dozens of independent scientists called the Energy Department's climate report “full of errors.” Fox leaves that out completely."],
   ["Auto industry split", "l", "NPR mentions that car part makers (MEMA) actually asked the EPA to keep the rules so they could compete with Chinese EVs. Fox makes it sound like the whole industry is happy."],
