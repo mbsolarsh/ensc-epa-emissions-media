@@ -107,18 +107,18 @@ showFrame(0);
 
 /* ---------- Emphasis meter (approx. % of paragraphs) ---------- */
 const THEMES = [
-  ["Climate science & disasters", 20, 3],
-  ["Law & political history", 30, 15],
-  ["Cars, EVs & auto industry", 30, 10],
-  ["Start-stop feature", 0, 30],
-  ["Cost & savings claims", 12, 15],
-  ["Public health", 3, 7],
-  ["Critics & opposition", 5, 20]
+  ["Climate science & disasters", 20, 3, "How greenhouse gases heat up the planet, plus things like record heat, floods, and wildfires."],
+  ["Law & political history", 30, 15, "The Clean Air Act, the 2007 Supreme Court case, the 2009 endangerment finding, and how different presidents have handled it."],
+  ["Cars, EVs & auto industry", 30, 10, "What the change means for car companies, electric vehicles (EVs), and the kinds of cars that get made and sold."],
+  ["Start-stop feature", 0, 30, "A feature in a lot of newer gas cars where the engine shuts off by itself when you stop, like at a red light, and turns back on when you let off the brake. It saves gas and cuts idling emissions, but a lot of drivers find it annoying. The EPA gave car companies credits for using it starting in 2012."],
+  ["Cost & savings claims", 12, 15, "Arguments about money, like the White House saying the repeal saves $1.3 trillion, or whether drivers save more on gas with cleaner cars."],
+  ["Public health", 3, 7, "How car pollution affects people's health, especially kids, older people, and people with asthma or other conditions."],
+  ["Critics & opposition", 5, 20, "People who are against the repeal, like the environmental law group Earthjustice and Colorado's governor, Jared Polis."]
 ];
 const meter = document.getElementById("meter");
-meter.innerHTML = THEMES.map(([label, n, f]) => `
+meter.innerHTML = THEMES.map(([label, n, f, desc]) => `
   <div class="m-row">
-    <div class="m-label">${label}</div>
+    <div class="m-label">${label}<span class="m-desc">${desc}</span></div>
     <div class="m-bars">
       <div class="m-bar l" data-w="${n}" title="NPR ≈ ${n}%"><span>NPR ≈ ${n}%</span></div>
       <div class="m-bar r" data-w="${f}" title="Fox ≈ ${f}%"><span>Fox ≈ ${f}%</span></div>

@@ -151,8 +151,10 @@ cite { display: block; font-style: normal; font-size: 14px; margin-top: 10px; co
 
 /* meter */
 .meter { background: var(--paper); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
-.m-row { display: grid; grid-template-columns: 170px 1fr; gap: 12px; align-items: center; margin-bottom: 14px; }
-.m-label { font-family: var(--head); font-weight: 600; font-size: 15px; }
+.m-row { display: grid; grid-template-columns: minmax(200px, 38%) 1fr; gap: 16px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.m-row:last-of-type { border-bottom: 0; }
+.m-label { font-family: var(--head); font-weight: 700; font-size: 16px; }
+.m-desc { display: block; font-family: var(--body); font-weight: 400; font-size: 14px; line-height: 1.45; color: var(--muted); margin-top: 4px; }
 .m-bars { display: grid; gap: 4px; }
 .m-bar { height: 16px; border-radius: 8px; width: 0; transition: width 1.1s cubic-bezier(.2,.8,.2,1); position: relative; min-width: 4px; }
 .m-bar.l { background: var(--left); } .m-bar.r { background: var(--right); }
