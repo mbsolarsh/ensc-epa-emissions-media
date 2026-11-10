@@ -230,7 +230,7 @@ cite { display: block; font-style: normal; font-size: 14px; margin-top: 10px; co
 .checklist input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--green); }
 .checklist label span { min-width: 0; overflow-wrap: break-word; }
 .checklist a { color: var(--left); font-weight: 600; }
-.checklist label:has(input:checked) span { color: var(--green); text-decoration: line-through; text-decoration-thickness: 1px; }
+.checklist label:has(input:checked) span { color: var(--green); font-weight: 600; }
 .pledge { text-align: center; font-family: var(--head); font-size: 22px; font-weight: 700; margin-top: 24px; }
 
 /* note */
