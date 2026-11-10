@@ -66,6 +66,7 @@ img { max-width: 100%; }
 .kicker { text-transform: uppercase; letter-spacing: .12em; font-size: 13px; opacity: .8; margin: 0 0 8px; }
 .hero h1 { font-size: clamp(44px, 9vw, 96px); line-height: .95; margin: 0 0 18px; font-weight: 800; }
 .hero h1 span { background: linear-gradient(90deg, #7fa6ff, #ff7d78); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.byline { font-family: var(--head); font-size: 20px; margin: -6px 0 16px; opacity: .9; letter-spacing: .02em; }
 .lede { font-size: 20px; margin: 0 auto 16px; max-width: 620px; }
 .topic-chip { display: inline-block; font-size: 15px; padding: 6px 14px; border: 1px solid rgba(255,255,255,.3); border-radius: 999px; margin-bottom: 22px; }
 .btn { display: inline-block; background: var(--yellow); color: #111; font-weight: 700; padding: 12px 22px; border-radius: 999px; text-decoration: none; border: 0; cursor: pointer; font-size: 16px; transition: transform .15s; }
